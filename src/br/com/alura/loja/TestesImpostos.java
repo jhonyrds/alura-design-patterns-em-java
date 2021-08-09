@@ -2,10 +2,10 @@ package br.com.alura.loja;
 
 import java.math.BigDecimal;
 
-import imposto.CalculadoraDeImpostos;
-import imposto.ICMS;
-import imposto.ISS;
-import orcamento.Orcamento;
+import br.com.alura.loja.imposto.CalculadoraDeImpostos;
+import br.com.alura.loja.imposto.ICMS;
+import br.com.alura.loja.imposto.ISS;
+import br.com.alura.loja.orcamento.Orcamento;
 
 public class TestesImpostos {
 

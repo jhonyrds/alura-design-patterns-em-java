@@ -1,8 +1,8 @@
-package desconto;
+package br.com.alura.loja.desconto;
 
 import java.math.BigDecimal;
 
-import orcamento.Orcamento;
+import br.com.alura.loja.orcamento.Orcamento;
 
 public abstract class Desconto {
 	
