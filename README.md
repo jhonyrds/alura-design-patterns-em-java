@@ -5,3 +5,4 @@
 3 - Template Method;
 4 - State;
 5 - Command;
+6 - Observer;
