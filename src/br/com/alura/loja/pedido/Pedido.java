@@ -3,8 +3,11 @@ package br.com.alura.loja.pedido;
 import br.com.alura.loja.orcamento.Orcamento;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 public class Pedido {
+
+    private String pedidoId = UUID.randomUUID().toString();
     private String cliente;
     private LocalDateTime data;
     private Orcamento orcamento;
@@ -25,5 +28,9 @@ public class Pedido {
 
     public Orcamento getOrcamento() {
         return orcamento;
+    }
+
+    public String getPedidoId() {
+        return pedidoId;
     }
 }

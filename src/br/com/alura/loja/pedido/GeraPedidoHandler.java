@@ -17,7 +17,7 @@ public class GeraPedidoHandler {
     }
     //construtor com injeção de dependências: repository, service etc.
 
-    public void executa(GerarPedido dados) {
+    public void execute(GerarPedido dados) {
 
         Orcamento orcamento = new Orcamento();
         orcamento.adicionarItem(new ItemOrcamento(new BigDecimal("200")));
@@ -25,6 +25,6 @@ public class GeraPedidoHandler {
         Pedido pedido = new Pedido(dados.getCliente(), LocalDateTime.now(), orcamento);
 
         //executar a lista de ações
-        acoes.forEach(a -> a.executarAcao(pedido));
+        acoes.forEach(a -> a.execute(pedido));
     }
 }
